@@ -9,6 +9,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul v-if="auth.user" class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
+                            <Link class="nav-link" href="/posts/">POSTS</Link>
+                        </li>
+                        <li class="nav-item">
                             <Link class="nav-link" href="/admin/dashboard">DASHBOARD</Link>
                         </li>
                         <li class="nav-item">
@@ -16,6 +19,7 @@
                         </li>
                     </ul>
                     <ul v-else class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <Link class="nav-link" href="/posts/">POSTS</Link>
                         <li class="nav-item">
                             <Link class="nav-link" href="/login">LOGIN</Link>
                         </li>

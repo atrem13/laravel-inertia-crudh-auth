@@ -19,3 +19,5 @@ Route::post('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'dest
 
 //route dashboard
 Route::get('/dashboard', \App\Http\Controllers\DashboardController::class)->middleware('auth');
+
+Route::resource('/posts', \App\Http\Controllers\PostController::class);
